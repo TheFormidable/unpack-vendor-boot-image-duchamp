@@ -1,0 +1,56 @@
+{
+  "info" : {
+    "output" : "vendor_boot.img",
+    "json" : "vendor_boot.json",
+    "headerVersion" : 4,
+    "product" : "",
+    "headerSize" : 2128,
+    "pageSize" : 4096,
+    "cmdline" : "bootopt=64S3,32N2,64N2",
+    "tagsLoadAddr" : 1204289536,
+    "kernelLoadAddr" : 1073741824,
+    "imageSize" : 67108864
+  },
+  "ramdisk" : {
+    "file" : "build/unzip_boot/ramdisk.img.lz4",
+    "position" : 4096,
+    "size" : 49520602,
+    "loadAddr" : 1727004672,
+    "xzFlags" : null
+  },
+  "dtb" : {
+    "file" : "build/unzip_boot/dtb",
+    "position" : 49524736,
+    "size" : 396043,
+    "loadAddr" : 1204289536,
+    "dtbList" : [ ]
+  },
+  "ramdisk_table" : {
+    "size" : 216,
+    "eachEntrySize" : 108,
+    "position" : 49922048,
+    "ramdidks" : [ {
+      "size" : 35955548,
+      "offset" : 0,
+      "type" : "PLATFORM",
+      "name" : "",
+      "boardId" : "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+      "boardIdStr" : "",
+      "file" : "build/unzip_boot/ramdisk.1.lz4"
+    }, {
+      "size" : 13565054,
+      "offset" : 35955548,
+      "type" : "RECOVERY",
+      "name" : "recovery",
+      "boardId" : "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+      "boardIdStr" : "",
+      "file" : "build/unzip_boot/ramdisk.2.lz4"
+    } ]
+  },
+  "bootconfig" : {
+    "file" : "",
+    "position" : 0,
+    "size" : 0,
+    "loadAddr" : 0
+  }
+}

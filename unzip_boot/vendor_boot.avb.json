@@ -1,0 +1,60 @@
+{
+  "header" : {
+    "required_libavb_version_major" : 1,
+    "required_libavb_version_minor" : 0,
+    "authentication_data_block_size" : 0,
+    "auxiliary_data_block_size" : 448,
+    "algorithm_type" : 0,
+    "hash_offset" : 0,
+    "hash_size" : 0,
+    "signature_offset" : 0,
+    "signature_size" : 0,
+    "public_key_offset" : 400,
+    "public_key_size" : 0,
+    "public_key_metadata_offset" : 400,
+    "public_key_metadata_size" : 0,
+    "descriptors_offset" : 0,
+    "descriptors_size" : 400,
+    "rollback_index" : 0,
+    "flags" : 0,
+    "release_string" : "avbtool 1.2.0"
+  },
+  "authBlob" : null,
+  "auxBlob" : {
+    "pubkey" : null,
+    "pubkeyMeta" : null,
+    "propertyDescriptors" : [ {
+      "tag" : 0,
+      "num_bytes_following" : 176,
+      "sequence" : 2,
+      "key" : "com.android.build.vendor_boot.fingerprint",
+      "value" : "Xiaomi/hal_mgvi_64_armv82_mt6897_global/mgvi_64_armv82:14/UP1A.230905.011/V816.0.4.0.UNLMIXM:user/release-keys"
+    } ],
+    "hashTreeDescriptors" : [ ],
+    "hashDescriptors" : [ {
+      "tag" : 2,
+      "num_bytes_following" : 192,
+      "sequence" : 1,
+      "flags" : 0,
+      "partition_name" : "vendor_boot",
+      "hash_algorithm" : "sha256",
+      "image_size" : 49926144,
+      "salt" : "JxrvlKsqFEpocQpn4Ni068H4Rxgsj9EtbCh+HPlNg/g=",
+      "digest" : "p6lpthX2Gh7dfqTCLO4TIJt6P8WVdwGOJkxxkzhaVIM=",
+      "partition_name_len" : 11,
+      "salt_len" : 32,
+      "digest_len" : 32,
+      "flagsInterpretation" : "0:A/B system"
+    } ],
+    "kernelCmdlineDescriptors" : [ ],
+    "chainPartitionDescriptors" : [ ],
+    "unknownDescriptors" : [ ]
+  },
+  "footer" : {
+    "versionMajor" : 1,
+    "versionMinor" : 0,
+    "originalImageSize" : 49926144,
+    "vbMetaOffset" : 49926144,
+    "vbMetaSize" : 704
+  }
+}
