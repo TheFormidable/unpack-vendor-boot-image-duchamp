@@ -1,32 +1,32 @@
-### TWRP device tree for Redmi K50 (rubens)
+### TWRP device tree for POCO X6 PRO (duchamp)
 
 =========================================
 
-The Redmi K50 (codenamed _"rubens"_) is a high-end, mid-range smartphone from Xiaomi.
+The POCO X6 PRO / REDMI K70E (codenamed _"duchamp"_) is a high-end, mid-range smartphone from Xiaomi.
 
-It was released in March 2022.
+It was released in jan 2024.
 
 ## Device specifications
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Octa-core CPU with 4x Arm Cortex-A78 up to 2.85GHz
-Chipset | Mediatek Dimensity 8100
-GPU     | Mali-G610 MC6
+CPU     | Octa-core CPU with 4x Arm Cortex-A715 and 4x Arm Cortex-A510 up to 3.35GHz
+Chipset | Mediatek Dimensity 8300
+GPU     | Mali-G615 MC6
 Memory  | 8/12 GB RAM (LPDDR5 6400Mbps)
 Shipped Android Version | 12
-Storage | 128/256/512 GB (UFS 3.1)
+Storage | 256/512 GB (UFS 4.0)
 Battery | Li-Po 5500 mAh, non-removable
 Display | 1440 x 3200 pixels, 6.67 inches, 60/120 hz
 
-![Redmi K50](https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1653381863.47942179.png)
+
 
 ## Features
 
 Works:
 
 - [X] ADB
-- [X] Decryption (Android 13)
+- [X] Decryption (Android 14)
 - [X] Display
 - [X] Fasbootd
 - [X] Flashing
@@ -47,7 +47,7 @@ repo sync -j$(nproc --all)
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/xiaomi/rubens" name="D8100-9000-TWRP-Device-Tree/device_xiaomi_rubens-TWRP" remote="github" revision="twrp-13" />
+<project path="device/xiaomi/duchamp" name="device_xiaomi_duchamp" remote="github" revision="twrp-13" />
 ```
 
 Finally execute these:
@@ -55,11 +55,11 @@ Finally execute these:
 ```
 source build/envsetup.sh
 repopick <needed patch>
-lunch twrp_rubens-eng
+lunch twrp_duchamp-eng
 mka vendorbootimage -j$(nproc --all)
 ```
 ## To use it:
 
 ```
-fastboot flash vendor_boot out/target/product/rubens/vendor_boot.img
+fastboot flash vendor_boot out/target/product/duchamp/vendor_boot.img
 ```
