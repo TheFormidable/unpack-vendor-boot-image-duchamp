@@ -14,7 +14,7 @@ CPU     | Octa-core CPU with 4x Arm Cortex-A715 and 4x Arm Cortex-A510 up to 3.3
 Chipset | Mediatek Dimensity 8300
 GPU     | Mali-G615 MC6
 Memory  | 8/12 GB RAM (LPDDR5 6400Mbps)
-Shipped Android Version | 12
+Shipped Android Version | 14
 Storage | 256/512 GB (UFS 4.0)
 Battery | Li-Po 5500 mAh, non-removable
 Display | 1440 x 3200 pixels, 6.67 inches, 60/120 hz
